@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.create-todo-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.create-todo-container textarea {
+  padding: 6px;
+  outline: none;
+  resize: none;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.create-todo-container div {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+.create-todo-container div button {
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.create-todo-container div button:first-child {
+  background-color: white;
+}
+
+.create-todo-container div button:last-child {
+  background-color: black;
+  color: white;
+}
+
+.todo-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: auto;
+}
+
+.todo-container strong {
+  align-self: center;
+}
+
+.todo-box {
+  display: flex;
+  justify-content: space-between;
+  border: 1px dashed black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.todo-box p {
+  cursor: pointer;
+}
+
+.check-todo {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-box button {
+  height: max-content;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid red;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+@media only screen and (max-width: 780px) {
+  .create-todo-container,
+  .create-todo-container {
+    width: 100%;
+  }
+}
